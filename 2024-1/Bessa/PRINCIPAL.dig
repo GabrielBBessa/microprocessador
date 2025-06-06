@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Banco_de_Registradores.dig</elementName>
+      <elementAttributes/>
+      <pos x="20" y="-1080"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ULA_projetos.dig</elementName>
+      <elementAttributes/>
+      <pos x="240" y="-1080"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Instruction Memory</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>93,2,80,0,13,3,0,0,93,42,3,0,93,42,2,0,93,42,1,0,b3,22,36,0,b3
+,42,35,0,b3,42,36,0,b3,82,36,0,b3,c2,36,0,b3,e2,36,0,b3,a2,36
+,0,b3,92,36,0,13,3,0,40,23,20,5,0,a3,20,6,0,83,22,0,0,3,22,4,0
+,97,f0,f,0,63,60,0,0,63,2a,6,0,63,2a,0,0,63,2e,6,0,6f,f0,9f,ff
+,73,0,10,0,67,80,0,0,93,2,0,1,73,0,10</data>
+        </entry>
+      </elementAttributes>
+      <pos x="-260" y="-1020"/>
+    </visualElement>
+    <visualElement>
+      <elementName>RAMDualPort</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Data-memory</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="420" y="-1060"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Register</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PC</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-440" y="-1040"/>
+    </visualElement>
+    <visualElement>
+      <elementName>PC-IMEDIATO.dig</elementName>
+      <elementAttributes/>
+      <pos x="-380" y="-1420"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Add</elementName>
+      <elementAttributes/>
+      <pos x="-300" y="-840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>4</long>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>8</int>
+        </entry>
+      </elementAttributes>
+      <pos x="-340" y="-820"/>
+    </visualElement>
+    <visualElement>
+      <elementName>ROM</elementName>
+      <elementAttributes>
+        <entry>
+          <string>AddrBits</string>
+          <int>8</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Unidade de controle</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
+        </entry>
+        <entry>
+          <string>Data</string>
+          <data>93,2,80,0,13,3,0,0,93,42,3,0,93,42,2,0,93,42,1,0,b3,22,36,0,b3
+,42,35,0,b3,42,36,0,b3,82,36,0,b3,c2,36,0,b3,e2,36,0,b3,a2,36
+,0,b3,92,36,0,13,3,0,40,23,20,5,0,a3,20,6,0,83,22,0,0,3,22,4,0
+,97,f0,f,0,63,60,0,0,63,2a,6,0,63,2a,0,0,63,2e,6,0,6f,f0,9f,ff
+,73,0,10,0,67,80,0,0,93,2,0,1,73,0,10</data>
+        </entry>
+      </elementAttributes>
+      <pos x="-80" y="-1360"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Probe</elementName>
+      <elementAttributes/>
+      <pos x="160" y="-1340"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="-340" y="-820"/>
+      <p2 x="-300" y="-820"/>
+    </wire>
+    <wire>
+      <p1 x="340" y="-1060"/>
+      <p2 x="420" y="-1060"/>
+    </wire>
+    <wire>
+      <p1 x="-320" y="-840"/>
+      <p2 x="-300" y="-840"/>
+    </wire>
+    <wire>
+      <p1 x="120" y="-1080"/>
+      <p2 x="240" y="-1080"/>
+    </wire>
+    <wire>
+      <p1 x="-380" y="-1020"/>
+      <p2 x="-320" y="-1020"/>
+    </wire>
+    <wire>
+      <p1 x="-320" y="-1020"/>
+      <p2 x="-260" y="-1020"/>
+    </wire>
+    <wire>
+      <p1 x="-20" y="-1340"/>
+      <p2 x="160" y="-1340"/>
+    </wire>
+    <wire>
+      <p1 x="-320" y="-1020"/>
+      <p2 x="-320" y="-840"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>
