@@ -1,5 +1,6 @@
 java -jar ~/projetos_2025/logisim-evolution-3.9.0-all.jar
 
+
 Essa é outra observação muito perspicaz! Você está certo, se olharmos para uma instrução R-Type isoladamente (OPCODE de 4 bits + FUNC de 2 bits), parece que estamos usando 6 dos 12 bits só para dizer "faça uma soma". Parece muito, e se fosse sempre assim, seria ineficiente.
 
 A genialidade (e a chave para entender por que isso é feito) está em como os bits são reutilizados para diferentes formatos de instrução. Não estamos criando um campo de opcode de 6 bits. Estamos criando um sistema hierárquico.
